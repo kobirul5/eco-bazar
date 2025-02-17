@@ -14,7 +14,7 @@ export default function Price() {
         <input type="range" min={0} max="100" value={price} onChange={handleOnChange} className="range range-success  " />
       </div>
       <div>
-        <p>price: {price}</p>
+        <p>Price: {price}</p>
       </div>
     </div>
   )
