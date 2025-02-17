@@ -1,6 +1,7 @@
 "use client"
 import Banner from "@/components/home/Banner";
 import CardHome from "@/components/home/CardHome";
+import FillterNav from "@/components/home/FillterNav";
 import SideBar from "@/components/home/SideBar";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -17,6 +18,9 @@ export default function Home() {
   return (
     <main>
        <Banner></Banner>
+
+      <FillterNav></FillterNav>
+
       <div className="container mx-auto grid grid-cols-12 gap-5">
         <div className="col-span-3"><SideBar></SideBar></div>
         <div className="col-span-9 min-h-screen ">
