@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Topnav from "@/components/navs/Topnav";
 import MainNav from "@/components/navs/MainNav";
+import NavLast from "@/components/navs/NavLast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
        <nav>
        <Topnav></Topnav>
        <MainNav></MainNav>
+       <NavLast></NavLast>
        </nav>
 
         {children}
